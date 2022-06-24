@@ -1,0 +1,149 @@
+/*Import das fontes*/
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+/* Reset de página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto-Regular";
+}
+/*CUSTOMIZAÇÃO GERAL DO BOOTSTRAP*/
+
+.container {
+    max-width: 1200px;
+}
+.container-grid {
+    max-width:  1200px;
+    margin: 0 auto;
+    /* border: 3px solid salmon; */
+}
+.card{
+    margin-bottom: 10px;
+}
+
+/*cabeçalho*/
+
+.header-flex { /*flex conteiner*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+
+header {
+   background-color: #1E1C21;
+}
+
+header .logo {
+    /* border: 1px solid red; */
+    width: 280px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid white; */
+    width: 60%;
+    height: 100%;
+}
+
+header .menu a {
+    font-family: 'Roboto-Light';
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* banner */
+.banner {
+    width: 100%; /* não precisaria */
+    height: 600px;
+    background-image: url(../images/banner_pilotos.png);
+    /*background-size: 100%;*/
+    background-repeat: no-repeat;
+    background-color: blueviolet; /* concertou o erro que estava ocorrendo*/
+}
+
+/*centraliza a informação do banner*/
+.banner .banner-info-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 550px;
+}
+.banner .banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 250px;
+    /*border: 1px solid white;*/
+}
+
+.banner .banner-info .info-title {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.banner .banner-info .info-text {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.banner .banner-info .info-link {
+    border: 1px solid #e71a3f;
+    background-color: #e71a3f;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 250px;
+    height: 45px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Patrocinadores*/
+
+.patrocinados {
+    background-color: #1E1C21;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.patrocinados-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*PRODUTOS*/
+
+.produtos{
+    background-color: #1E1C21;
+}
