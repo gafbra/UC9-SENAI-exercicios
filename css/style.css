@@ -10,6 +10,11 @@
 }
 
 @font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
     font-family: 'Roboto-Light';
     src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
@@ -34,9 +39,7 @@ body {
     margin: 0 auto;
     /* border: 3px solid salmon; */
 }
-.card{
-    margin-bottom: 10px;
-}
+
 
 /*cabeçalho*/
 
@@ -144,6 +147,65 @@ header .menu a {
 
 /*PRODUTOS*/
 
-.produtos{
+.produtos {
     background-color: #1E1C21;
+    color: white;
+    padding: 30px 0px;
+    
+}
+
+.produtos h2 {
+    font-family: 'Roboto-Medium';
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.card {
+    max-width: 230px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to bottom, #000000, #1e1c21);
+}
+
+.card .card-title {
+    font-family: 'Roboto-Medium';
+    text-transform: uppercase;
+}
+
+.card .card-price {
+    font-size: 1.4rem;
+    font-family: 'Roboto-Medium';
+
+}
+
+.card .btn-buy {
+    background-color: #c31616;
+    border: 1px solid #c31616;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+/*BREAKPOINTS*/
+
+@media all and (max-width: 1199px){
+    .container .container-grid {
+        max-width: 980px;
+    }
+}/*não está funcionando*/
+
+/*TABLETS 768px - 991px*/
+@media all and (max-width: 991px){
+    .patrocinados{
+        display: none;
+    }
+    header .logo {
+        width: 230px;
+        margin-left: 15px;
+    }
+
+}
+
+/*SMARTPHONES celulares 0 - 767px*/
+
+@media all and (max-width: 767px){
+
 }
