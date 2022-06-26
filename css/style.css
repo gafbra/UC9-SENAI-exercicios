@@ -18,6 +18,10 @@
     font-family: 'Roboto-Light';
     src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
 
 /* Reset de página */
 * {
@@ -73,6 +77,10 @@ header .menu a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+header .menu-bars {
+    display: none;
 }
 
 /* banner */
@@ -201,11 +209,71 @@ header .menu a {
         width: 230px;
         margin-left: 15px;
     }
+    
+    header .menu {
+        position: fixed;
+        top: 0;
+        left: -80%;
+        width: 80%;
+        height: 100%;
+        z-index: 10;
+        opacity: 0;
+        border-radius: 0 0 0 90px;
+
+        justify-content: center;
+        flex-direction: column;
+        align-items: stretch;
+
+        background-color: hsla(0, 80%, 43%, 0.96);
+        padding: 20px 50px;
+        
+        transition: left 0.4s, opacity 0.5s;
+    }
+    
+    header .menu a {
+        border-left: 3px dotted white;
+        margin-bottom: 20px;
+        padding: 20px;
+        font-size: 1.4rem;
+        font-family: 'Roboto-Bold';
+        
+    }
+
+    header .menu-bars {
+        display: block;
+        width: 45px;
+        margin-right: 15px;
+    }
+
+    .mostraEscondeMenu {
+        left: 0 !important;
+        opacity: 1 !important;
+    }
 
 }
 
 /*SMARTPHONES celulares 0 - 767px*/
 
 @media all and (max-width: 767px){
+    
+    .header-flex {
+        height: 65px;
+    }
+    
+    header .menu-bars {
+        width: 25px;
+    }
 
+    header .logo{
+        width: 180px;
+    }
+
+    header .menu a {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-left: 2px dotted white;
+        font-size: 1rem;
+        
+    }
 }
+
