@@ -1,0 +1,20 @@
+/*imports de fonts*/
+@font-face {
+    font-family:"Roboto-Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3a404e;
+    color: white;
+}
+
+.container {
+    max-width: 315px;
+}
