@@ -68,6 +68,7 @@ body {
 .mensagem {
     text-align: center;
     color: #c67187;
+    height: 25px;
 }
 
 .signin {
